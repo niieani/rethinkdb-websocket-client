@@ -10,12 +10,18 @@
   },
   "scripts": {
     "test": "eslint test && mocha --compilers js:babel/register",
-    "prepublish": "webpack --config webpack/browser.config.js && webpack --config webpack/node.config.js"
+    "prepublish": "babel src --out-dir dist"
   },
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
+  "transpiler": "babel",
+  "babelOptions": {
+    "optional": [
+      "runtime"
+    ]
+  },
   "dependencies": {
     "blob-to-buffer": "^1.2.3",
     "bluebird": "^2.9.27",
