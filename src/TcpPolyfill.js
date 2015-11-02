@@ -1,5 +1,5 @@
 import blobToBuffer from 'blob-to-buffer';
-import EventEmitter2 from 'eventemitter2';
+import {EventEmitter2} from 'eventemitter2';
 
 let tcpPolyfillOptions = {
   path: '/',
