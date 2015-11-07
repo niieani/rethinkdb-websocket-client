@@ -39,7 +39,15 @@ function connect(_ref) {
   return connectionPromise;
 }
 
+var RethinkdbWebsocketClient = {
+  rethinkdb: _rethinkdb2['default'],
+  protodef: _rethinkdbProtoDef2['default'],
+  Promise: _bluebird2['default'],
+  connect: connect
+};
+
 exports.rethinkdb = _rethinkdb2['default'];
 exports.protodef = _rethinkdbProtoDef2['default'];
 exports.Promise = _bluebird2['default'];
 exports.connect = connect;
+exports['default'] = RethinkdbWebsocketClient;
