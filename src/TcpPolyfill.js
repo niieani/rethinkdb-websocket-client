@@ -1,3 +1,5 @@
+/* @flow */
+
 import blobToBuffer from 'blob-to-buffer';
 import {EventEmitter2} from 'eventemitter2';
 
@@ -104,7 +106,7 @@ export function Socket(options) {
   });
 }
 
-export function connect(...args) {
+export function connect(...args):Socket {
   const opts = {};
   if (args[0] && typeof args[0] === 'object') {
     opts.port = args[0].port;
