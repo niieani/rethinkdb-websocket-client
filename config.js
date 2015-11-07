@@ -21,6 +21,7 @@ System.config({
     "core-js": "npm:core-js@1.2.5",
     "eventemitter2": "npm:eventemitter2@0.4.14",
     "node-libs-browser": "npm:node-libs-browser@0.5.3",
+    "process": "github:jspm/nodelibs-process@0.1.2",
     "rethinkdb": "npm:rethinkdb@2.1.1",
     "ws": "npm:ws@0.8.0",
     "github:jspm/nodelibs-assert@0.1.0": {
