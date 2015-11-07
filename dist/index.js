@@ -18,6 +18,10 @@ var _rethinkdbProtoDef = require('rethinkdb/proto-def');
 
 var _rethinkdbProtoDef2 = _interopRequireDefault(_rethinkdbProtoDef);
 
+var _process = require('process');
+
+var _process2 = _interopRequireDefault(_process);
+
 var _TcpPolyfill = require('./TcpPolyfill');
 
 function connect(_ref) {
@@ -31,11 +35,11 @@ function connect(_ref) {
 
   (0, _TcpPolyfill.configureTcpPolyfill)({ path: path, secure: secure, wsProtocols: wsProtocols, simulatedLatencyMs: simulatedLatencyMs });
   // Temporarily unset process.browser so rethinkdb uses a TcpConnection
-  var oldProcessDotBrowser = process.browser;
-  process.browser = false;
+  var oldProcessDotBrowser = _process2['default'].browser;
+  _process2['default'].browser = false;
   var connectOptions = { host: host, port: port, db: db };
   var connectionPromise = _bluebird2['default'].promisify(_rethinkdb2['default'].connect)(connectOptions);
-  process.browser = oldProcessDotBrowser;
+  _process2['default'].browser = oldProcessDotBrowser;
   return connectionPromise;
 }
 
