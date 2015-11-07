@@ -1,3 +1,5 @@
+/* @flow */
+
 import Promise from 'bluebird';
 import rethinkdb from 'rethinkdb';
 import protodef from 'rethinkdb/proto-def';
