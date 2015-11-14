@@ -31,11 +31,11 @@
   "jspm": {
     "dependencies": {
       "blob-to-buffer": "npm:blob-to-buffer@^1.2.3",
-      "bluebird": "npm:bluebird@^3.0.5",
+      "bluebird": "npm:bluebird@^2.9.27",
       "eventemitter2": "npm:eventemitter2@^0.4.14",
       "node-libs-browser": "npm:node-libs-browser@^0.5.3",
       "process": "github:jspm/nodelibs-process@^0.1.2",
-      "rethinkdb": "npm:rethinkdb@^2.1.1",
+      "rethinkdb": "npm:rethinkdb@^2.2.1",
       "ws": "npm:ws@^0.8.0"
     },
     "devDependencies": {
@@ -44,7 +44,7 @@
       "core-js": "npm:core-js@^1.1.4"
     },
     "overrides": {
-      "npm:rethinkdb@2.1.1": {
+      "npm:rethinkdb@2.2.0": {
         "map": {
           "net": "./dist/TcpPolyfill.js",
           "tls": "./dist/TlsStub.js"

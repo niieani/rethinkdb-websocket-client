@@ -22,7 +22,7 @@ System.config({
     "eventemitter2": "npm:eventemitter2@0.4.14",
     "node-libs-browser": "npm:node-libs-browser@0.5.3",
     "process": "github:jspm/nodelibs-process@0.1.2",
-    "rethinkdb": "npm:rethinkdb@2.1.1",
+    "rethinkdb": "npm:rethinkdb@2.2.0",
     "ws": "npm:ws@0.8.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -50,6 +50,16 @@ System.config({
     "github:jspm/nodelibs-https@0.1.0": {
       "https-browserify": "npm:https-browserify@0.0.0"
     },
+    "github:jspm/nodelibs-net@0.1.2": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "http": "github:jspm/nodelibs-http@1.7.1",
+      "net": "github:jspm/nodelibs-net@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "stream": "github:jspm/nodelibs-stream@0.1.0",
+      "timers": "github:jspm/nodelibs-timers@0.1.0",
+      "util": "github:jspm/nodelibs-util@0.1.0"
+    },
     "github:jspm/nodelibs-os@0.1.0": {
       "os-browserify": "npm:os-browserify@0.1.2"
     },
@@ -64,6 +74,9 @@ System.config({
     },
     "github:jspm/nodelibs-string_decoder@0.1.0": {
       "string_decoder": "npm:string_decoder@0.10.31"
+    },
+    "github:jspm/nodelibs-timers@0.1.0": {
+      "timers-browserify": "npm:timers-browserify@1.4.1"
     },
     "github:jspm/nodelibs-url@0.1.0": {
       "url": "npm:url@0.10.3"
@@ -385,11 +398,13 @@ System.config({
       "stream-browserify": "npm:stream-browserify@1.0.0",
       "string_decoder": "npm:string_decoder@0.10.31"
     },
-    "npm:rethinkdb@2.1.1": {
+    "npm:rethinkdb@2.2.0": {
       "bluebird": "npm:bluebird@2.10.2",
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "events": "github:jspm/nodelibs-events@0.1.1",
-      "process": "github:jspm/nodelibs-process@0.1.2"
+      "net": "github:jspm/nodelibs-net@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "tls": "github:jspm/nodelibs-tls@0.1.0"
     },
     "npm:ripemd160@0.2.0": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
